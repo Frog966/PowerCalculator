@@ -1,7 +1,6 @@
 #include <chrono>
 #include <iostream>
 #include <string>
-#include <vector>
 
 // Define the maximum length of the number.
 #define MAX_LENGTH 500
@@ -20,10 +19,9 @@ int main() {
 
 	// Use this array to store the number.
 	// Initialize the number with a value of 1.
-	int digits[MAX_LENGTH] = { 1 };// Remember the start time.
-	hrclock::time_point start = hrclock::now();
+	int digits[MAX_LENGTH] = { 1 };
+	hrclock::time_point start = hrclock::now(); // Remember the start time.
 
-	int base = 3;
 	int carryOver = 0;
 
 	// Iterate for each power of two specified.
