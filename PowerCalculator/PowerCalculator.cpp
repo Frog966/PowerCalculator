@@ -1,6 +1,7 @@
 #include <chrono>
 #include <iostream>
 #include <string>
+#include <vector>
 
 // Define the maximum length of the number.
 #define MAX_LENGTH 500
@@ -10,9 +11,11 @@ int main() {
 	using namespace chrono;
 	using hrclock = high_resolution_clock;
 
+	int base = 2;
+
 	// Prompt the user for a power of two.
 	int power = 0;
-	cout << "Power of two to calculate: ";
+	cout << "Power of " << base << " to calculate: ";
 	cin >> power;
 
 	// Use this array to store the number.
@@ -30,7 +33,7 @@ int main() {
 			int temp1 = digits[q] * base + carryOver;
 
 			digits[q] = temp1 % 10;
-			carryOver = temp1 / 10; // Pass any number greater than 10 to next element
+			carryOver = temp1 / 10; // Pass any number greater than 10 to next element. If temp1 < 10, returns 0 which resets carryOver
 		}
 	}
 
