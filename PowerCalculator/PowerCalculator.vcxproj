@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PowerCalculator.cpp" />
+    <ClCompile Include="Optimizations.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Optimizations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
